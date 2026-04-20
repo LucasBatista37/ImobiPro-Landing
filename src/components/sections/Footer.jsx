@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/5 mt-10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-slate-600 text-xs">© 2025 ImobiPro. Todos os direitos reservados.</p>
+          <p className="text-slate-600 text-xs">© {new Date().getFullYear()} ImobiPro. Todos os direitos reservados.</p>
           <p className="text-slate-600 text-xs">Feito com ❤️ para o mercado imobiliário brasileiro.</p>
         </div>
       </div>
