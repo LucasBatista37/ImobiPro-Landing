@@ -1,6 +1,7 @@
 import { CheckCircle2, Zap, ShieldCheck, Headphones, RefreshCw, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
+import { trackEvent } from '@/lib/analytics';
 
 const APP_URL = import.meta.env.VITE_APP_URL ?? '';
 
@@ -112,7 +113,11 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <a href={`${APP_URL}/register`} className="block">
+              <a
+                href={`${APP_URL}/register`}
+                className="block"
+                onClick={() => trackEvent('pricing_click', { plan: plan.id, price: plan.price })}
+              >
                 <Button
                   size="lg"
                   className={cn(

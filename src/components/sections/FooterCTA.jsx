@@ -1,5 +1,6 @@
 import { Zap, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { trackEvent } from '@/lib/analytics';
 
 export default function FooterCTA() {
   return (
@@ -21,7 +22,11 @@ export default function FooterCTA() {
           Junte-se a elas e comece a vender mais hoje mesmo.
         </p>
 
-        <a href="#pricing" className="inline-block mt-8">
+        <a
+          href="#pricing"
+          className="inline-block mt-8"
+          onClick={() => trackEvent('lead_form_submit', { source: 'footer_cta' })}
+        >
           <Button
             size="lg"
             variant="white"

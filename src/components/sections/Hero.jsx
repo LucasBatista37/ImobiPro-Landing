@@ -1,5 +1,6 @@
 import { Zap, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { trackEvent } from '@/lib/analytics';
 
 const stats = [
   { value: '500+', label: 'imobiliárias ativas' },
@@ -66,7 +67,7 @@ export default function Hero() {
             </ul>
 
             <div className="flex flex-col sm:flex-row gap-3 mt-8">
-              <a href="#pricing">
+              <a href="#pricing" onClick={() => trackEvent('lead_form_submit', { source: 'hero' })}>
                 <Button size="lg" className="rounded-full gap-2 px-7 shadow-lg shadow-blue-500/25 w-full sm:w-auto">
                   <Zap className="h-4 w-4" />
                   Começar grátis agora

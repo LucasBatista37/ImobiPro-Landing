@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Navbar from './components/sections/Navbar';
 import Hero from './components/sections/Hero';
 import Problem from './components/sections/Problem';
@@ -10,8 +11,14 @@ import Pricing from './components/sections/Pricing';
 import FAQ from './components/sections/FAQ';
 import FooterCTA from './components/sections/FooterCTA';
 import Footer from './components/sections/Footer';
+import { initAnalytics, trackPageView } from './lib/analytics';
 
 export default function App() {
+  useEffect(() => {
+    initAnalytics();
+    trackPageView();
+  }, []);
+
   return (
     <div className="min-h-screen bg-slate-950 font-sans antialiased">
       <Navbar />
