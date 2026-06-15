@@ -19,8 +19,14 @@ import { initAnalytics, trackPageView } from './lib/analytics';
 function LandingPage() {
   return (
     <div className="min-h-screen bg-slate-950 font-sans antialiased">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:rounded-lg focus:bg-blue-500 focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white focus:shadow-lg"
+      >
+        Pular para o conteúdo
+      </a>
       <Navbar />
-      <main>
+      <main id="main-content">
         <Hero />
         <Problem />
         <Solution />

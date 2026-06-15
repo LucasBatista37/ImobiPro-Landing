@@ -35,7 +35,7 @@ export default function Navbar() {
             <Building2 className="h-4 w-4 text-white" />
           </div>
           <span className={cn('font-bold text-lg transition-colors', scrolled ? 'text-slate-900' : 'text-white')}>
-            Imobi<span className="text-blue-500">Pro</span>
+            Imob<span className="text-blue-500">Pro</span>
           </span>
         </a>
 
