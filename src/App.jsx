@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/sections/Navbar';
 import Hero from './components/sections/Hero';
 import Problem from './components/sections/Problem';
@@ -11,14 +12,11 @@ import Pricing from './components/sections/Pricing';
 import FAQ from './components/sections/FAQ';
 import FooterCTA from './components/sections/FooterCTA';
 import Footer from './components/sections/Footer';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 import { initAnalytics, trackPageView } from './lib/analytics';
 
-export default function App() {
-  useEffect(() => {
-    initAnalytics();
-    trackPageView();
-  }, []);
-
+function LandingPage() {
   return (
     <div className="min-h-screen bg-slate-950 font-sans antialiased">
       <Navbar />
@@ -36,5 +34,20 @@ export default function App() {
       </main>
       <Footer />
     </div>
+  );
+}
+
+export default function App() {
+  useEffect(() => {
+    initAnalytics();
+    trackPageView();
+  }, []);
+
+  return (
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/privacidade" element={<PrivacyPolicy />} />
+      <Route path="/termos" element={<TermsOfService />} />
+    </Routes>
   );
 }

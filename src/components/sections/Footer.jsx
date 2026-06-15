@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom';
 import { Building2 } from 'lucide-react';
 
-const cols = {
+const anchorCols = {
   Produto: [
     { label: 'Funcionalidades', href: '#features' },
     { label: 'Como funciona', href: '#how-it-works' },
@@ -12,12 +13,12 @@ const cols = {
     { label: 'Blog', href: '#' },
     { label: 'Contato', href: '#' },
   ],
-  Legal: [
-    { label: 'Termos de Uso', href: '#' },
-    { label: 'Política de Privacidade', href: '#' },
-    { label: 'LGPD', href: '#' },
-  ],
 };
+
+const legalLinks = [
+  { label: 'Termos de Uso', to: '/termos' },
+  { label: 'Política de Privacidade', to: '/privacidade' },
+];
 
 export default function Footer() {
   return (
@@ -43,7 +44,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-wrap gap-10">
-            {Object.entries(cols).map(([col, items]) => (
+            {Object.entries(anchorCols).map(([col, items]) => (
               <div key={col}>
                 <p className="text-slate-300 font-semibold text-sm mb-4">{col}</p>
                 {items.map(({ label, href }) => (
@@ -57,6 +58,18 @@ export default function Footer() {
                 ))}
               </div>
             ))}
+            <div>
+              <p className="text-slate-300 font-semibold text-sm mb-4">Legal</p>
+              {legalLinks.map(({ label, to }) => (
+                <Link
+                  key={label}
+                  to={to}
+                  className="block text-slate-500 hover:text-slate-300 text-sm mb-2.5 transition-colors"
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 
