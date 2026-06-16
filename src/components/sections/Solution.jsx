@@ -99,7 +99,7 @@ export default function Solution() {
               <span className="gradient-text">quem vende imóveis</span>
             </h2>
             <p className="text-slate-500 mt-5 text-lg leading-relaxed">
-              O ImobiPro não é um CRM genérico adaptado. É uma ferramenta construída
+              O Imobrix não é um CRM genérico adaptado. É uma ferramenta construída
               especificamente para imobiliárias e corretores brasileiros.
             </p>
 

@@ -14,13 +14,13 @@ body {
 
 @layer utilities {
   .gradient-text {
-    @apply bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-indigo-500 to-violet-600 bg-clip-text text-transparent;
   }
   .gradient-text-light {
-    @apply bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent;
   }
   .hero-glow {
-    background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(59,130,246,0.25), transparent);
+    background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(79,70,229,0.25), transparent);
   }
   .card-hover {
     @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5;

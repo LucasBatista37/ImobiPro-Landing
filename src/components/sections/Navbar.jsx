@@ -31,11 +31,11 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         <a href="#hero" className="flex items-center gap-2">
-          <div className="bg-blue-600 rounded-lg p-1.5">
+          <div className="bg-indigo-600 rounded-lg p-1.5">
             <Building2 className="h-4 w-4 text-white" />
           </div>
-          <span className={cn('font-bold text-lg transition-colors', scrolled ? 'text-slate-900' : 'text-white')}>
-            Imob<span className="text-blue-500">Pro</span>
+          <span className={cn('font-heading font-bold text-lg tracking-tight transition-colors', scrolled ? 'text-slate-900' : 'text-white')}>
+            Imobrix
           </span>
         </a>
 
@@ -85,7 +85,7 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block text-slate-700 hover:text-blue-600 text-sm font-medium py-2 transition-colors"
+              className="block text-slate-700 hover:text-indigo-600 text-sm font-medium py-2 transition-colors"
             >
               {l.label}
             </a>

@@ -23,7 +23,7 @@ export default function Hero() {
     >
       {/* Background glow */}
       <div className="absolute inset-0 hero-glow pointer-events-none" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
 
       {/* Grid pattern */}
       <div
@@ -38,14 +38,14 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left — copy */}
           <div>
-            <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
-              <span className="text-blue-400 text-xs font-semibold tracking-wide">
-                +500 imobiliárias já usam o ImobiPro
+            <div className="inline-flex items-center gap-2 bg-indigo-500/10 border border-indigo-500/20 rounded-full px-4 py-1.5 mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
+              <span className="text-indigo-300 text-xs font-semibold tracking-wide">
+                +500 imobiliárias já usam a Imobrix
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-white leading-[1.15] tracking-tight">
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-white leading-[1.15] tracking-tight">
               Venda mais imóveis
               <br />
               com{' '}
@@ -68,7 +68,7 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-3 mt-8">
               <a href="#pricing" onClick={() => trackEvent('lead_form_submit', { source: 'hero' })}>
-                <Button size="lg" className="rounded-full gap-2 px-7 shadow-lg shadow-blue-500/25 w-full sm:w-auto">
+                <Button size="lg" className="rounded-full gap-2 px-7 shadow-lg shadow-indigo-500/25 w-full sm:w-auto">
                   <Zap className="h-4 w-4" />
                   Começar grátis agora
                 </Button>
@@ -94,7 +94,7 @@ export default function Hero() {
 
           {/* Right — browser mockup */}
           <div className="relative hidden lg:block">
-            <div className="absolute -inset-4 bg-blue-500/10 rounded-3xl blur-2xl" />
+            <div className="absolute -inset-4 bg-indigo-500/10 rounded-3xl blur-2xl" />
             <div className="relative bg-[#111827] border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
               {/* Browser bar */}
               <div className="flex items-center gap-2 px-4 h-9 bg-[#1a2234] border-b border-white/5">
@@ -104,7 +104,7 @@ export default function Hero() {
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-400/70" />
                 </div>
                 <div className="flex-1 mx-3 bg-[#0d1627] rounded text-xs text-slate-500 px-3 py-0.5 text-center">
-                  app.imobipro.com.br
+                  app.imobrix.com.br
                 </div>
               </div>
 
@@ -138,7 +138,7 @@ export default function Hero() {
                         style={{
                           height: `${h}%`,
                           background: i === 6
-                            ? 'linear-gradient(to top, #2563eb, #60a5fa)'
+                            ? 'linear-gradient(to top, #4F46E5, #818cf8)'
                             : '#1e3a5f',
                         }}
                       />

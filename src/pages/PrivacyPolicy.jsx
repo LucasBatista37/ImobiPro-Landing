@@ -4,7 +4,7 @@ import { Building2, ArrowLeft } from 'lucide-react';
 const sections = [
   {
     title: '1. Quem somos',
-    text: 'O ImobiPro é uma plataforma SaaS de gestão imobiliária operada pela ImobiPro Tecnologia Ltda. ("nós", "nosso"). Este documento descreve como coletamos, usamos, armazenamos e protegemos seus dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).',
+    text: 'O Imobrix é uma plataforma SaaS de gestão imobiliária operada pela Imobrix Tecnologia Ltda. ("nós", "nosso"). Este documento descreve como coletamos, usamos, armazenamos e protegemos seus dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).',
   },
   {
     title: '2. Dados que coletamos',
@@ -81,7 +81,7 @@ export default function PrivacyPolicy() {
         </div>
 
         <div className="border-t border-white/10 mt-12 pt-8 text-center text-xs text-slate-600">
-          © {new Date().getFullYear()} ImobiPro — Todos os direitos reservados
+          © {new Date().getFullYear()} Imobrix — Todos os direitos reservados
         </div>
       </div>
     </div>

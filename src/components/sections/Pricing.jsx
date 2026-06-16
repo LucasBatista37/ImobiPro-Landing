@@ -55,10 +55,10 @@ export default function Pricing() {
     <section id="pricing" className="bg-slate-50 py-20 md:py-24">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center max-w-xl mx-auto">
-          <span className="inline-block text-blue-600 text-sm font-semibold uppercase tracking-widest mb-3">
+          <span className="inline-block text-indigo-600 text-sm font-semibold uppercase tracking-widest mb-3">
             Preços
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
             Simples e sem surpresas
           </h2>
           <p className="text-slate-500 mt-4 text-lg">
@@ -73,12 +73,12 @@ export default function Pricing() {
               className={cn(
                 'rounded-2xl p-7 border flex flex-col',
                 plan.highlight
-                  ? 'bg-white border-2 border-blue-500 shadow-xl shadow-blue-500/10 relative'
+                  ? 'bg-white border-2 border-indigo-500 shadow-xl shadow-indigo-500/10 relative'
                   : 'bg-white border-slate-200 shadow-sm'
               )}
             >
               {plan.highlight && (
-                <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow whitespace-nowrap">
+                <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-indigo-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow whitespace-nowrap">
                   ★ Mais popular
                 </span>
               )}
@@ -102,12 +102,12 @@ export default function Pricing() {
 
               <ul className="space-y-2.5 mb-8 flex-1">
                 <li className="flex items-start gap-2.5 text-slate-700 text-sm font-medium">
-                  <CheckCircle2 className="h-4 w-4 text-blue-500 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-4 w-4 text-indigo-500 shrink-0 mt-0.5" />
                   {plan.maxProperties ? `Até ${plan.maxProperties} imóveis` : 'Imóveis ilimitados'}
                 </li>
                 {SHARED_FEATURES.map((f) => (
                   <li key={f} className="flex items-start gap-2.5 text-slate-700 text-sm">
-                    <CheckCircle2 className="h-4 w-4 text-blue-500 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-4 w-4 text-indigo-500 shrink-0 mt-0.5" />
                     {f}
                   </li>
                 ))}
@@ -122,7 +122,7 @@ export default function Pricing() {
                   size="lg"
                   className={cn(
                     'w-full rounded-full gap-2',
-                    plan.highlight ? 'shadow-md shadow-blue-500/25' : ''
+                    plan.highlight ? 'shadow-md shadow-indigo-500/25' : ''
                   )}
                   variant={plan.highlight ? 'default' : 'outline'}
                 >

@@ -4,11 +4,11 @@ import { Building2, ArrowLeft } from 'lucide-react';
 const sections = [
   {
     title: '1. Aceitação dos termos',
-    text: 'Ao criar uma conta no ImobiPro, você concorda com estes Termos de Uso. Se não concordar, não utilize o serviço. Estes termos regem o uso da plataforma ImobiPro e complementam nossa Política de Privacidade.',
+    text: 'Ao criar uma conta no Imobrix, você concorda com estes Termos de Uso. Se não concordar, não utilize o serviço. Estes termos regem o uso da plataforma Imobrix e complementam nossa Política de Privacidade.',
   },
   {
     title: '2. Descrição do serviço',
-    text: 'O ImobiPro é uma plataforma SaaS (Software as a Service) de gestão imobiliária que permite cadastrar imóveis, gerenciar leads, agendar visitas e acompanhar métricas. O serviço é oferecido mediante assinatura, com período de trial gratuito de 30 dias.',
+    text: 'O Imobrix é uma plataforma SaaS (Software as a Service) de gestão imobiliária que permite cadastrar imóveis, gerenciar leads, agendar visitas e acompanhar métricas. O serviço é oferecido mediante assinatura, com período de trial gratuito de 30 dias.',
   },
   {
     title: '3. Conta e responsabilidades',
@@ -16,15 +16,15 @@ const sections = [
   },
   {
     title: '4. Uso aceitável',
-    text: 'Você se compromete a usar o ImobiPro apenas para fins legais e relacionados à gestão imobiliária legítima. É expressamente proibido: realizar engenharia reversa, utilizar o sistema para spam, violar direitos de terceiros, cadastrar dados falsos ou tentar comprometer a segurança da plataforma.',
+    text: 'Você se compromete a usar o Imobrix apenas para fins legais e relacionados à gestão imobiliária legítima. É expressamente proibido: realizar engenharia reversa, utilizar o sistema para spam, violar direitos de terceiros, cadastrar dados falsos ou tentar comprometer a segurança da plataforma.',
   },
   {
     title: '5. Planos e pagamentos',
-    text: 'O ImobiPro oferece planos mensais com cobrança recorrente via cartão de crédito (processado pelo Stripe). O trial de 30 dias não requer cartão. A assinatura é renovada automaticamente até que seja cancelada. O cancelamento pode ser feito a qualquer momento, com efeito no final do período pago.',
+    text: 'O Imobrix oferece planos mensais com cobrança recorrente via cartão de crédito (processado pelo Stripe). O trial de 30 dias não requer cartão. A assinatura é renovada automaticamente até que seja cancelada. O cancelamento pode ser feito a qualquer momento, com efeito no final do período pago.',
   },
   {
     title: '6. Dados e propriedade intelectual',
-    text: 'Você retém a propriedade de todos os dados que inserir na plataforma (imóveis, leads, etc.). A ImobiPro concede a você uma licença limitada, não exclusiva, para usar o software. O código, design e marca ImobiPro são propriedade exclusiva da ImobiPro Tecnologia Ltda.',
+    text: 'Você retém a propriedade de todos os dados que inserir na plataforma (imóveis, leads, etc.). A Imobrix concede a você uma licença limitada, não exclusiva, para usar o software. O código, design e marca Imobrix são propriedade exclusiva da Imobrix Tecnologia Ltda.',
   },
   {
     title: '7. Disponibilidade',
@@ -32,7 +32,7 @@ const sections = [
   },
   {
     title: '8. Limitação de responsabilidade',
-    text: 'O ImobiPro não se responsabiliza por danos indiretos, incidentais ou consequenciais. Nossa responsabilidade total em qualquer caso está limitada ao valor pago nos últimos 3 meses de assinatura.',
+    text: 'O Imobrix não se responsabiliza por danos indiretos, incidentais ou consequenciais. Nossa responsabilidade total em qualquer caso está limitada ao valor pago nos últimos 3 meses de assinatura.',
   },
   {
     title: '9. Rescisão',
@@ -81,7 +81,7 @@ export default function TermsOfService() {
         </div>
 
         <div className="border-t border-white/10 mt-12 pt-8 text-center text-xs text-slate-600">
-          © {new Date().getFullYear()} ImobiPro — Todos os direitos reservados
+          © {new Date().getFullYear()} Imobrix — Todos os direitos reservados
         </div>
       </div>
     </div>

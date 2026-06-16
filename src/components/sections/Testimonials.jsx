@@ -6,7 +6,7 @@ const testimonials = [
     name: 'Ricardo Mendes',
     role: 'Diretor',
     company: 'Mendes Imóveis • São Paulo',
-    quote: 'Em 2 meses usando o ImobiPro, minha taxa de conversão de leads dobrou. Antes eu tinha tudo em planilha e perdia cliente todo dia. Agora tenho controle total.',
+    quote: 'Em 2 meses usando o Imobrix, minha taxa de conversão de leads dobrou. Antes eu tinha tudo em planilha e perdia cliente todo dia. Agora tenho controle total.',
     color: 'bg-blue-500',
   },
   {
@@ -14,7 +14,7 @@ const testimonials = [
     name: 'Carla Ferreira',
     role: 'Corretora autônoma',
     company: 'Belo Horizonte • MG',
-    quote: 'Precisava de algo simples, sem complicação. O ImobiPro configurei em minutos e funciona perfeitamente no celular. Não consigo mais imaginar trabalhar sem ele.',
+    quote: 'Precisava de algo simples, sem complicação. O Imobrix configurei em minutos e funciona perfeitamente no celular. Não consigo mais imaginar trabalhar sem ele.',
     color: 'bg-violet-500',
   },
   {
@@ -39,7 +39,7 @@ export default function Testimonials() {
             Quem usa, recomenda
           </h2>
           <p className="text-slate-500 mt-4 text-lg">
-            Mais de 500 imobiliárias já transformaram sua gestão com o ImobiPro.
+            Mais de 500 imobiliárias já transformaram sua gestão com o Imobrix.
           </p>
         </div>
 

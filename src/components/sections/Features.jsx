@@ -16,7 +16,7 @@ const benefits = [
   {
     icon: Clock,
     title: 'Resposta mais rápida',
-    body: 'Velocidade é o fator #1 na conversão. Com o ImobiPro, você responde antes da concorrência.',
+    body: 'Velocidade é o fator #1 na conversão. Com o Imobrix, você responde antes da concorrência.',
     color: 'amber',
   },
   {

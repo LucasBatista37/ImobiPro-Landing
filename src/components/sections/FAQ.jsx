@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: 'Funciona no celular?',
-    a: 'Sim. O ImobiPro é responsivo e funciona em smartphone, tablet e computador. Sem precisar instalar nenhum aplicativo.',
+    a: 'Sim. O Imobrix é responsivo e funciona em smartphone, tablet e computador. Sem precisar instalar nenhum aplicativo.',
   },
   {
     q: 'Que suporte está incluído?',

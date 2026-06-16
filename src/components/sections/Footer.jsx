@@ -27,11 +27,11 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row gap-10 justify-between">
           <div className="max-w-xs">
             <a href="#hero" className="flex items-center gap-2">
-              <div className="bg-blue-600 rounded-lg p-1.5">
+              <div className="bg-indigo-600 rounded-lg p-1.5">
                 <Building2 className="h-4 w-4 text-white" />
               </div>
-              <span className="text-white font-bold text-lg">
-                Imobi<span className="text-blue-400">Pro</span>
+              <span className="font-heading text-white font-bold text-lg tracking-tight">
+                Imobrix
               </span>
             </a>
             <p className="text-slate-500 text-sm mt-3 leading-relaxed">
@@ -74,7 +74,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/5 mt-10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-slate-600 text-xs">© {new Date().getFullYear()} ImobiPro. Todos os direitos reservados.</p>
+          <p className="text-slate-600 text-xs">© {new Date().getFullYear()} Imobrix. Todos os direitos reservados.</p>
           <p className="text-slate-600 text-xs">Feito com ❤️ para o mercado imobiliário brasileiro.</p>
         </div>
       </div>
